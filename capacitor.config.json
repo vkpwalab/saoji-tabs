@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "saoji-tabs",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

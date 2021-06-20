@@ -1,0 +1,7 @@
+{
+  "name": "saoji-tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
