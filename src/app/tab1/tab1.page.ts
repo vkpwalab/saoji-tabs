@@ -9,7 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class Tab1Page {
 
   slideOpts = {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween:0,
     coverflowEffect: {
       rotate: 50,
