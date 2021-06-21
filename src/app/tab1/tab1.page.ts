@@ -10,8 +10,15 @@ export class Tab1Page {
 
   slideOpts = {
     slidesPerView: 3,
-    spaceBetween:0
-    
+    spaceBetween:0,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      loop: true,
+      slideShadows: true,
+    },
   }
 
   constructor() {}
