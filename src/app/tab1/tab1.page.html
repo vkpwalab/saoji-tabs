@@ -1,8 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-icon style="font-size: 40px;
+    margin-right: 5px;" slot="end" name="cart"></ion-icon>
+    <img class="logo" src="assets/logo.png" />
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +13,183 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block">
+          <ion-icon slot="start" name="cloud-upload"></ion-icon>
+          UPLOAD PRESCRIPTION</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-text>Lifetyle Disorders</ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/diabetes.png" />
+            <ion-card-header>
+              <ion-card-title>Diabetes</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/heart.png" />
+            <ion-card-header>
+              <ion-card-title>Heart</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/kidney.png" />
+            <ion-card-header>
+              <ion-card-title>Kidney</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/thyroid.png" />
+            <ion-card-header>
+              <ion-card-title>Kidney</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/vitamind.png" />
+            <ion-card-header>
+              <ion-card-title>Kidney</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/lifestyle/liver.png" />
+            <ion-card-header>
+              <ion-card-title>Liver</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-row>
+    <ion-row>
+      <ion-text>Test by Condition</ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-slides [options]="slideOpts">
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/condition/arthiritis.png" />
+            <ion-card-header>
+              <ion-card-title>Arthritis</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/condition/hyper.png" />
+            <ion-card-header>
+              <ion-card-title>Hypertension</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/condition/infection.png" />
+            <ion-card-header>
+              <ion-card-title>Infections</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/condition/allergy.png" />
+            <ion-card-header>
+              <ion-card-title>Allergy</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-row>
+
+    <ion-row>
+      <ion-text>Test/Packages by Habits</ion-text>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-slides [options]="slideOpts">
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/habits/junk-food.png" />
+            <ion-card-header>
+              <ion-card-title>Junk Food</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/habits/alcohol.png" />
+            <ion-card-header>
+              <ion-card-title>Drinking</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/habits/smoking.png" />
+            <ion-card-header>
+              <ion-card-title>Smoking</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+
+        <ion-slide>
+          <ion-card>
+            <img src="assets/images/habits/stress.png" />
+            <ion-card-header>
+              <ion-card-title>Stress</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+      </ion-slides>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="specialized_test_div">
+            <ion-text class="special_test_text">Specialized Test</ion-text>
+            <ion-row >
+              <ion-col>
+                <ion-button style="margin-top: 10px; margin-bottom: 40px;" color="light" shape="round" fill="outline">Oncocare</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button style="margin-top: 10px; margin-bottom: 40px;" color="light" shape="round" fill="outline">Women Health</ion-button>
+              </ion-col>
+            </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,4 +1,77 @@
 <div id="container">
   <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  
+  <owl-carousel-o [options]="customOptions">
+
+    <ng-container>
+        <ng-template class="slide" carouselSlide [width]="150">
+            <div class="card carousel click-able">
+                <div class="padding">
+                    <img src="assets/images/lifestyle/diabetes.png" />
+                </div>
+                <div class="card-footer bg-transparent footer-pad">
+                    <div class="row mr-0 ml-0">
+                        <div class="col-9 col-md-9 padl-2 pr-0 pt-1">
+                            <p class="mb-0 font-weight-bold max-width-50">Diabetes</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+        <ng-template class="slide" carouselSlide [width]="150">
+
+            <div class="card carousel click-able">
+                <div class="padding">
+                    <img src="assets/images/lifestyle/heart.png" />
+                </div>
+                <div class="card-footer bg-transparent footer-pad">
+                    <div class="row mr-0 ml-0">
+                        <div class="col-9 col-md-9 padl-2 pr-0 pt-1">
+                            <p class="mb-0 font-weight-bold max-width-50">Heart</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+        <ng-template class="slide" carouselSlide [width]="150">
+
+            <div class="card carousel click-able">
+                <div class="padding">
+                    <img src="assets/images/lifestyle/kidney.png" />
+                </div>
+                <div class="card-footer bg-transparent footer-pad">
+                    <div class="row mr-0 ml-0">
+                        <div class="col-9 col-md-9 padl-2 pr-0 pt-1">
+                            <p class="mb-0 font-weight-bold max-width-50">Kidney</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template class="slide" carouselSlide [width]="150">
+
+            <div class="card carousel click-able">
+                <div class="padding">
+                    <img src="assets/images/lifestyle/thyroid.png" />
+                </div>
+                <div class="card-footer bg-transparent footer-pad">
+                    <div class="row mr-0 ml-0">
+                        <div class="col-9 col-md-9 padl-2 pr-0 pt-1">
+                            <p class="mb-0 font-weight-bold max-width-50">Thyroid</p>
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </ng-template>
+
+    
+    </ng-container>
+</owl-carousel-o>
 </div>
+
